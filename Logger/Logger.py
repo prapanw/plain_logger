@@ -15,7 +15,7 @@ class Logger:
     # Description: To log Warning
     ##
     @staticmethod
-    def LogWarn(self, message):
+    def LogWarn(message):
         Logger.LogMessage(message, "WARN")
 
     ##
@@ -23,7 +23,7 @@ class Logger:
     # Description: To log Error
     ##
     @staticmethod
-    def LogError(self, message):
+    def LogError(message):
         Logger.LogMessage(message, "ERROR")
     
     ##

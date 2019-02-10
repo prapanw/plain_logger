@@ -22,12 +22,22 @@ Logs data with 'INFO' tag.
 
 Example:
 ``` 
-from simple_logger import LogInfo
+from Logger.Logger import Logger
 
 def foo():
-    fname = "John"
-    lname = "Doe"
-    LogInfo ("Name = {} {}".format(fname, lname))
+    try:
+        fname = "John"
+        lname = "Doe"
+        LogInfo ("Name = {} {}".format(fname, lname))
+
+        x = 0
+        LogDebug("x = {}".format(x))
+
+        y = -1
+        LogWarn("Something may be wrong.")
+
+    except e:
+        LogError("Exception occurred: {}".format(str(e)))
 ```
 
 Output:
