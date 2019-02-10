@@ -2,7 +2,7 @@
 
 An easy to use helper pip package to help you log details at any point in code.
 
-## Assumptions:
+## Assumptions
 
 + Assuming python is installed on your system.
 
