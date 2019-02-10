@@ -1,0 +1,25 @@
+###########################
+HOW TO PUBLISH THE .WHL
+###########################
+
+Run 'cmd' as Administrator
+CD to the project directory
+
+CLEAR PREVIOUS INSTALLS
+===================
+pip uninstall plain-logger
+
+BUILD (Create .whl)
+===================
+python setup.py sdist bdist_wheel
+
+UPLOAD to PyPi
+===================
+python -m twine upload dist\plain_logger-0.1.4-py3-none-any.whl
+
+TEST
+===================
+-- DID NOT WORK --> python -m pip install --index-url https://test.pypi.org/simple/ plain-logger
+pip install .
+
+
