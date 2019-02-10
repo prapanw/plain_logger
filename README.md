@@ -1,4 +1,4 @@
-# simple_logger - Make logging simple and easy
+# plain_logger - Make logging simple and easy
 
 An easy to use helper pip package to help you log details at any point in code.
 
@@ -9,10 +9,10 @@ An easy to use helper pip package to help you log details at any point in code.
 
 ## Installation
 
-Install `simple_logger` on your system using : 
+Install `plain_logger` on your system using : 
 
 ```
-pip install simple_logger
+pip install plain_logger
 ```
 
 ## Usage

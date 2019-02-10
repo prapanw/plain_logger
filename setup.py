@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='simple_logger',  
+    name='plain_logger',  
 
     version='0.1.0',
 
@@ -20,8 +20,8 @@ setup(
     license='MIT',
 
     # The project's main homepage.
-    url="https://github.com/prapanw/simple_logger",
-    download_url='https://github.com/prapanw/simple_logger',
+    url="https://github.com/prapanw/plain_logger",
+    download_url='https://github.com/prapanw/plain_logger',
 
     packages=find_packages(),
     classifiers=[
