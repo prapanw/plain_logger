@@ -1,0 +1,8 @@
+README.md
+setup.py
+Logger/Logger.py
+Logger/__init__.py
+simple_logger.egg-info/PKG-INFO
+simple_logger.egg-info/SOURCES.txt
+simple_logger.egg-info/dependency_links.txt
+simple_logger.egg-info/top_level.txt
