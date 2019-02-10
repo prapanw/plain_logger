@@ -1,4 +1,4 @@
-from Logger.Logger import Logger
+from plain_logger.Logger import Logger
 
 Logger.LogInfo("Test")
 Logger.LogWarn("Test")
@@ -19,7 +19,7 @@ def foo():
         Logger.LogWarn("Something may be wrong.")
 
         raise ValueError('A very specific bad thing happened.')
-        
+
     except Exception as e:
         Logger.LogError("Exception occurred: {}".format(str(e)))
 

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: plain-logger
-Version: 0.1.4
+Version: 0.1.5
 Summary: An easy to use helper pip package to help you log details at any point in code.
 Home-page: https://github.com/prapanw/plain_logger
 Author: Prakhar Panwaria
