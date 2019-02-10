@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name='plain_logger',  
 
-    version='0.1.0',
+    version='0.1.1',
 
     description="An easy to use helper pip package to help you log details at any point in code.",
     long_description=long_description,
