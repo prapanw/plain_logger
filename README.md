@@ -34,7 +34,7 @@ Logs data with a custom tag.
 
 ## Example
 ``` 
-from Logger.Logger import Logger
+from plain_logger.Logger import Logger
 
 def foo():
     try:
