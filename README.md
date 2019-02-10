@@ -20,7 +20,19 @@ pip install plain_logger
 ### LogInfo
 Logs data with 'INFO' tag.
 
-Example:
+### LogWarn
+Logs data with 'WARN' tag.
+
+### LogError
+Logs data with 'ERROR' tag.
+
+### LogDebug
+Logs data with 'DEBUG' tag.
+
+### LogMessage
+Logs data with a custom tag.
+
+## Example
 ``` 
 from Logger.Logger import Logger
 
@@ -28,20 +40,32 @@ def foo():
     try:
         fname = "John"
         lname = "Doe"
-        LogInfo ("Name = {} {}".format(fname, lname))
+        Logger.LogInfo ("Name = {} {}".format(fname, lname))
 
         x = 0
-        LogDebug("x = {}".format(x))
+        Logger.LogDebug("x = {}".format(x))
 
         y = -1
-        LogWarn("Something may be wrong.")
+        Logger.LogWarn("Something may be wrong.")
 
-    except e:
-        LogError("Exception occurred: {}".format(str(e)))
+        raise ValueError('A very specific bad thing happened.')
+        
+    except Exception as e:
+        Logger.LogError("Exception occurred: {}".format(str(e)))
+
+foo()
 ```
 
 Output:
 ```
-[2019-01-25 19:30:02] INFO: Name = John Doe
+[2019-02-09 22:31:55] INFO : Test
+[2019-02-09 22:31:55] WARN : Test
+[2019-02-09 22:31:55] ERROR : Test
+[2019-02-09 22:31:55] DEBUG : Test
+[2019-02-09 22:31:55] DEBUG : Test, TAG
+[2019-02-09 22:31:55] INFO : Name = John Doe
+[2019-02-09 22:31:55] DEBUG : x = 0
+[2019-02-09 22:31:55] WARN : Something may be wrong.
+[2019-02-09 22:31:55] ERROR : Exception occurred: A very specific bad thing happened.
 ```
 
